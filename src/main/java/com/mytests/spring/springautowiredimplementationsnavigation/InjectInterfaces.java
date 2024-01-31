@@ -26,5 +26,18 @@ public class InjectInterfaces {
     @Autowired @Qualifier("singleImpl")
     private SingleImplementationService singleImplQualified;
 
+    @Autowired
+    private OneTwoService implOne;
+
+    @Autowired
+    @Qualifier("implOne")
+    private OneTwoService implOneQualified;
+
+    @Autowired
+    private OneTwoService implTwo;
+
+    @Autowired
+    @Qualifier("implTwo")
+    private OneTwoService implTwoQualified;
 
 }
