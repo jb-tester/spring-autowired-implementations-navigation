@@ -11,17 +11,17 @@ public class InjectInterfaces {
     @Autowired
     private FooBarService fooService;
 
-    @Autowired
-    private FooBarService barService;
-
-    @Autowired
-    private SingleImplementationService singleImpl;
-
     @Autowired @Qualifier("fooService")
     private FooBarService fooServiceQualified;
 
+    @Autowired
+    private FooBarService barService;
+
     @Autowired @Qualifier("barService")
     private FooBarService barServiceQualified;
+
+    @Autowired
+    private SingleImplementationService singleImpl;
 
     @Autowired @Qualifier("singleImpl")
     private SingleImplementationService singleImplQualified;
